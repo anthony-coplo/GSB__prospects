@@ -1,0 +1,57 @@
+## 0.1.1 (août 22, 2017)
+  - mise à jour du CHANGELOG
+  - recommage de la classe iController à IController
+  - Normalisation de la classe AbstractDAO
+  - correction du fichier parameters
+  - Normalisation des Controller
+  - mise à jour du fichier .gitignore
+
+## 0.1.0 (août 22, 2017)
+  - Controller Praticien, Prospect, Client
+  - Fichier Template Liste des Praticiens, des Prospects, des Clients
+  - Utilisation d'une variable "basePath" pour déterminer la racine du projet
+  - L'action DefaultAction du Controller gère le routage de 2e niveau (routage vers les Actions)
+  - Les actions comme listAction instancie la vie (View) et la paramètre avant de l'afficher (display)
+  - Utilisation d'une couche d'abstraction sur les Controller avec AbstractController
+  - Utilisation d'un Controller par défaut DefaultController pour la page d'Accueil
+  - l'index gère le routage de 1er niveau (routage vers les Controller)
+  - Ajout des classes Route et Router dans le noyau (kernel) pour la gestion de l'URL Routing
+  - Ajout de l'interface iController et de la classe abstraite AbstractController pour normaliser les Controller
+  - Ajout du template Accueil
+  - Ajout de la licence GPL 3.0
+  - Ajout du fichier htaccess pour l'URL routing
+  - Création des Controller Praticien, Prospect, Client
+  - Création des Templates d'affichage des listes
+  - Ajout de la méthode isset dans la classe View
+  - Ajout de la l'hydratation automatique de la Ville du Praticien via Praticien->getVille()
+  - Ajout de la documentation phpDoc
+  - Ajout du Template de Liste des Praticiens
+  - Ajout du fichier de Style spécifique à GSB
+  - Ajout de l'icone favicon
+  - Ajout de la classe View pour la gestion des Templates
+  - Ajout du fichier de paramétrage Parameters.php
+  - Installation de twiter bootstrap via composer
+  - Ajout de la classe de DAO VilleDAO et de la classe de tests unitaires VilleDAOTest
+  - Ajout de la fonction findFromPraticien à la classe TypePraticienDAO et au test TypePraticienDAOTest
+  - Ajout de la classe de DAO EtatDAO et de la classe de tests unitaires EtatDAOTest
+  - Ajout de la fonction findAllFromClient à la classe PrestationDAO et au test PrestationDAOTest
+  - Ajout de la classe de DAO PrestationDAO et de la classe de tests unitaires PrestationDAOTest
+  - Création de la méthode "join" dans la classe AbstractDAO pour la gestion généralisée des jointures
+  - Ajout de la classe de DAO ClientDAO et de la classe de tests unitaires ClientDAOTest
+  - Utilisation de propriété "protected" à la place de "private" dans la classe Praticien
+  - Insertion des valeurs dans la base de données gsb_prospects
+  - Ajout du fichier de paramétrage pour Visual Studio Code (launch.json)
+  - Ajout de la classe de DAO ProspectDAO et de la classe de tests unitaires ProspectDAOTest
+  - Ajout de la classe de DAO PraticienDAO et de la classe de tests unitaires PraticienDAOTest
+  - Création de la classe abstraite AbstractDAO pour la génération des classes DAO
+  - Ajout de la classe métier Client et de la classe de tests unitaires ClientTest
+  - Paramétrage de PHPUnit pour les tests unitaires (phpunit.xml)
+  - Ajout des classes métiers Client Etat Prestation Prospect TypePraticien Ville et des classe de tests correspondants
+  - Ajout de la classe métier Praticien et de la classe de tests unitaires PraticienTest
+  - Création de la classe d'Exception DAOException
+  - Création de la classe d'Exception NotImplementedException
+  - Ajout de la classe abstraite AbstractException et de l'interface IException
+  - Création de l'interface générale des classes DAO IDAO
+  - Ajout de la classe de DAO TypePraticienDAO et de la classe de tests unitaires TypePraticienDAOTest
+  - Ajout du fichier .gitignore
+  - Ajout du fichier composer.json
