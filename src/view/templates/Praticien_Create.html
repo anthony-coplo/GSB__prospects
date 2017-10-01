@@ -31,7 +31,35 @@ html lang="fr">
 </head>
 <body>
 
-    
+    <p>Ajout d'un praticien : </p>
+    <form action="" method="post">
+      <label>Nom :</label>
+      <input type="text" name="nnom" id="nom" required="required" placeholder="Entrez votre nom"/><br /><br />
+      <label>Prenom :</label>
+      <input type="email" name="prenom" id="prenom" required="required" placeholder="Entrez votre prenom"/><br/><br />
+      <label>Adresse :</label>
+      <input type="text" name="adresse" id="adresse" required="required" placeholder="Entrez votre adresse"/><br/><br />
+      <label>Code postal :</label>
+      <input type="text" name="codepostal" id="codepost" required="required" placeholder="Code postal"/><br /><br />
+      <label>Vile :</label>
+      <input type="text" name="ville" id="ville" required="required" placeholder="Ville"/><br /><br />
+
+
+      <input type="submit" value=" OK " name="OK"/><br />
+    </form>
 
 
 </body>
+
+
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="<?= $this->basePath; ?>/../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="<?= $this->basePath; ?>/../vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="<?= $this->basePath; ?>/../vendor/twbs/bootstrap/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

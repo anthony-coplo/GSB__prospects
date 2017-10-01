@@ -70,4 +70,14 @@ final class PraticienController extends AbstractController implements IControlle
 
         $view->display();
     }
+
+
+    /**
+     * Function createAction
+     * 
+     */
+    public function createAction()
+    {
+        
+    }
 }
